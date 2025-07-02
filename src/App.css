@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, #root {
+  @apply bg-[#c6f3fa] min-h-screen;
+}
+
+.todo-app-title {
+  @apply text-5xl font-bold text-[#0a357d] text-center mt-12 mb-8;
+}
+
+.todo-form {
+  @apply flex flex-wrap justify-center items-center gap-4 mb-8;
+}
+
+.todo-input {
+  @apply rounded-lg border border-[#0a357d] px-4 py-2 w-72 text-lg shadow focus:outline-none focus:ring-2 focus:ring-[#0a357d];
+}
+
+.todo-select {
+  @apply rounded-lg border border-[#0a357d] px-4 py-2 text-lg shadow focus:outline-none focus:ring-2 focus:ring-[#0a357d];
+}
+
+.todo-btn {
+  @apply bg-[#0486b7] hover:bg-[#026c94] text-white font-semibold px-6 py-2 rounded-xl shadow transition-all duration-200;
+}
+
+.clear-btn {
+  @apply bg-[#0486b7] hover:bg-[#026c94] text-white font-semibold px-6 py-2 rounded-xl shadow transition-all duration-200;
+}
+
+.todo-section {
+  @apply bg-[#d6f6ff] border-2 border-dashed border-[#0486b7] rounded-2xl p-8 m-4 shadow-lg min-w-[350px] flex-1;
+}
+
+.todo-section-title {
+  @apply text-2xl font-bold text-[#0a357d] flex items-center gap-2 mb-4;
+}
+
+.todo-card {
+  @apply bg-white rounded-xl shadow-md p-6 mb-4 flex flex-col gap-2;
+}
+
+.todo-category {
+  @apply italic text-[#0486b7] text-base;
+}
+
+.todo-actions {
+  @apply flex gap-2 mt-2;
+}
+
+.todo-action-btn {
+  @apply bg-yellow-400 hover:bg-yellow-500 text-white rounded-lg p-2 shadow transition-all duration-200;
+}
+
+.todo-delete-btn {
+  @apply bg-yellow-400 hover:bg-yellow-500 text-white rounded-lg p-2 shadow transition-all duration-200;
+}
